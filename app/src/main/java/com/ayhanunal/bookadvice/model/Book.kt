@@ -12,7 +12,7 @@ data class Book(
     @SerializedName("description") val description : String,
     @SerializedName("image_url") val book_image_url : String,
     @SerializedName("publish_date") val publish_date : String,
-    @SerializedName("isbn") val book_isbn : Int,
+    @SerializedName("isbn") val book_isbn : String,
     @SerializedName("book_language") val book_language : String,
     @SerializedName("page_count") val page_count : Int,
     @SerializedName("cat1") val cat1 : String,

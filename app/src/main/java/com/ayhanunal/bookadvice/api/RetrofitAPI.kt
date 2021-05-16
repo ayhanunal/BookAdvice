@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface RetrofitAPI {
 
     @GET("/book_api/all_book.php")
-    fun allBook(): Single<List<MainModel>>
+    fun allBook(): Single<MainModel>
 
 }

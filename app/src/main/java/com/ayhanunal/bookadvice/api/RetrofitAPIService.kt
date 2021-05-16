@@ -16,7 +16,7 @@ class RetrofitAPIService {
         .build()
         .create(RetrofitAPI::class.java)
 
-    fun getData() : Single<List<MainModel>> {
+    fun getData() : Single<MainModel> {
         return api.allBook()
     }
 
