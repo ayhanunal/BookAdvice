@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import com.ayhanunal.bookadvice.R
 import com.ayhanunal.bookadvice.api.RetrofitAPIService
+import com.ayhanunal.bookadvice.model.Book
 import com.ayhanunal.bookadvice.model.MainModel
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -19,17 +20,17 @@ class HomeActivity : AppCompatActivity() {
 
 
 
-
+        /*
         val apiService = RetrofitAPIService()
         val disposable = CompositeDisposable()
-
         disposable.add(
             apiService.getData()
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeWith(object: DisposableSingleObserver<MainModel>(){
                     override fun onSuccess(t: MainModel) {
-                        Log.e("result", t.crawl_date)
+                        //Log.e("result", t.book.toString())
+                        showList(t.book)
                     }
 
                     override fun onError(e: Throwable) {
@@ -38,11 +39,18 @@ class HomeActivity : AppCompatActivity() {
                 })
         )
 
+         */
 
-
-        print("AAAAAAAA"+apiService.getData())
 
 
 
     }
+
+    /*
+    fun showList(myList: List<Book>){
+        Log.e("ARRAY ", myList.toString())
+    }
+
+     */
+
 }
