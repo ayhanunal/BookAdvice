@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookAdvice">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".MainActivity" android:theme="@style/SplashTheme" android:screenOrientation="portrait">
+        <activity android:name=".view.HomeActivity"></activity>
+        <activity android:name=".view.MainActivity" android:theme="@style/SplashTheme" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
